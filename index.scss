@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero{
+    #check{
+        display: none;
+    }
+}
+// #check:checked~.sidebar{
+//      position: relative;
+//     top: 0;
+//     left: 0;
+//     height: fit-content;
+//     width: 430px;
+//      background-color: black;
+//     z-index: 3;
+//      color: white;
+//      display: flex;
+//      flex-direction: column;
+//      gap: 1rem;
+//      transform: translateX(100%);
+
+
+    
+// }
+
+
+
+   .sidebar{
+
+  position: relative;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 430px;
+     background-color: black;
+    z-index: 3;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+    transform: translateX(-100%);
+     h1{
+        margin-top: 1rem;
+     }
+     .sidebarlist{
+        ul{
+            li{
+                margin-top: 1rem;
+
+                a{
+                    list-style: none;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .sidebarfirst{
+            margin-top: 1rem;
+            h3{
+                margin-top: 1rem;
+            }
+        }
+        .sidebarsecond{
+            margin-top: 3rem;
+            h3{
+              margin-top: 1rem;
+            }
+        }
+     }
+    }
+
+#hero{
+
+ #check{
+    display:none ;
+ }
+  
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+   
+
+     #bar{
+        color: white;
+        font-size: 28px;
+        position: relative;
+        top: -0.8rem
+     }
+    #navbar{
+
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+        width: 100%;
+        height: 6rem;
+        background-color: #1c1f3b;
+
+    
+      
+        .image{
+            height: 36px;
+            width: 220px;
+        }
+        .mid{
+            display: flex;
+            align-items: center;
+            height: 66px;
+            width: 631px;
+            
+            position: relative;
+             top: 0;
+             bottom: 0;
+             right: 0;
+             left: 0;
+      
+             .first{
+                  height: 72%;
+                  background-color: aliceblue;
+                  display: flex;
+             }
+             .second{
+                 height: 72%;
+                  background-color: aliceblue;
+                  display: flex;
+             }
+            .third{
+                input{
+                       width: 32rem;
+                       height: 3rem;
+                       padding: 1rem;
+
+                    ::placeholder{
+                        background-color: white;
+                    }
+                }
+               
+            }
+            .icon{
+                position: absolute;
+                right: -12px;
+                background-color: orange;
+                font-size: 40px;
+                padding-left: 21px;
+
+                i{
+                    position: relative;
+                    right: 10px;
+                    top: 4px;
+                }
+            }
+            
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .userlist{
+                position: absolute;
+                  top: 68px;
+                  border-radius: 1rem;
+                 right: 11rem;
+                width: 9rem;
+                height: 100px;
+                background-color: white;
+                color: black;
+                display: flex;
+                flex-direction: column;
+            
+                  border: 1px solid black;
+                  padding: .2rem;
+                  display: none;
+                 
+            h5{
+                opacity: .5;
+              font-size: 13px;
+                font-weight: 300;
+                margin-top: .7rem;
+            }
+            }
+            #usercircle{
+                height: 26px;
+                width: 26px;
+                font-size: 34px;
+                color: white;
+                position: relative;
+                right: 0;
+                left: 0;
+            }
+            .navbtn{
+                background-color: #10a5a9;
+                font-size: 15px;
+                height: 48px;
+                width: 138px;
+                margin: 9px 0 0 0;
+                border: 1px solid #10a5a9;
+                padding: 15px 0x 13px 10px ;
+                position: relative;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                color: #ffffff;
+                    margin-right: 1rem;
+            }
+        }
+     
+       
+    }
+
+ #navpart{
+         display: flex;
+         justify-content: space-around;
+          position: relative;
+         top: 5rem;
+          background-color: #1c1f3b;
+        
+         color: white;
+         font-size: 14px;
+         padding: 1rem;
+         cursor: pointer;
+
+         .project{
+            width: 8rem;
+            opacity: .8;
+            border-radius: 1rem;
+            border: 1px solid rgb(7, 7, 7);
+            padding: .5rem;
+            background-color: #ffffff;
+            color: black;
+            position: absolute;
+            top: 3.1rem;
+            left: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            display: none;
+            h4{
+                margin-top: .4rem;
+            }
+         }
+        }
+    // header
+
+    
+}
+ #hero #navbar .image1{
+        display: none;
+    }
+
+    // media query
+
+   @media  screen and (max-width:786px) {
+        
+    #hero #navbar .image1{
+        display: none;
+    }
+    #hero #navbar{
+        height: 9rem;
+    }
+        #hero #navbar .mid .third input{
+            width: 13rem;
+             position    : absolute;
+            top: 3rem;
+            width: 40.3rem;
+            left: 35px;
+        }
+        #hero #navpart{
+            display: none;
+        }
+        #hero #navbar .mid .icon{
+            right: -11.5rem;
+            top: 3rem;
+        }
+        #hero #navbar .image {
+            position: absolute;
+            left: 2rem;
+            top: 1rem;
+            z-index: 11;
+        }
+        #rent{
+            position: relative;
+            top: 39px;
+            left: -6.5rem;
+            height: 3rem;
+        }
+        #hero #navbar .mid .second {
+             background-color: #1c1f3b;
+        }
+        #select-city{
+            position: relative;
+            left: 14rem;
+            bottom: 1.8rem;
+            height: 2rem;
+             background-color: #1c1f3b;
+             color: white;
+             border: none;
+             font-weight: 900;
+        }
+        #hero #navbar .mid .first {
+             background-color: #1c1f3b;
+        }
+        #hero #navbar .user #usercircle{
+           bottom: 1.7rem;
+           right: -0.5rem;
+        }
+        #hero #navbar .user .navbtn{
+            top: -2rem;
+        }
+        #hero #bar{
+            top: -2.5rem
+        }
+    }
+
+  @media  screen and (max-width:426px){
+       #hero #navbar .image{
+        display: none;
+      }
+      #hero #navbar .image1{
+        display: block;
+        width: 3rem;
+        position: absolute;
+        top: 18px;
+        left: 3rem;
+    }
+        #hero #bar{
+            left: 1rem;
+        }
+            #select-city{
+                position: absolute;
+                left: 5rem;
+                bottom: 3.6rem;
+            }
+            #property{
+                display: none;
+            
+            }
+                #hero #navbar .user .navbtn{
+                    width: 4rem;
+                    top: -2.6rem;
+                }
+                #hero #navbar .user #usercircle{
+                    bottom: 2.3rem;
+                }
+                    #hero #navbar .mid .third input{
+                        left: -.5rem;
+                        width: 18rem;
+                    }
+                        #hero #navbar .mid .icon{
+                            right: -7rem;
+                        }
+  } 
