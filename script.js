@@ -16,3 +16,20 @@ function myProject(){
 function myProject1(){
     mousemove.style.display='none'
 }
+
+let bar=document.querySelector('.bar');
+
+let sidebar=document.querySelector('.sidebar');
+
+bar.addEventListener('click',()=>{
+
+    sidebar.style.cssText=` transform:translateX(0%);`
+})
+
+
+let cancel=document.querySelector('.cancel')
+
+cancel.addEventListener('click',()=>{
+
+    sidebar.style.cssText=`transform:translate(-100%)`;
+})
